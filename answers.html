@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html lang="pl">
+</head>
+		<meta name="description" content="Tests for English language learners with automatic marking." />
+<meta name="keywords" content="Learn English" />
+<title>Online English Tests Answers</title>
+<link rel="shortcut icon" href="test.png" />
+<link rel="icon" sizes="16x16 32x32 64x64" href="test.png" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<header class="oet-head-wrap">
+	<div class="oet-head">
+		<a href="gimbaza.html" class="oet-logo" title="Online English Tests">
+			<img src="oet.svg" title="Online English Tests" alt="Online English Tests"/>
+					</a>
+					<div class="oet-opt">
+				<button onclick="window.open('kontakt.html','HelpWindow','height=400, width=400')" class="oet-help">?</button>
+	     <button onclick="showCustomMenu('nowa')" class="button buttonMenu"><H4>Check Answers</H4></button>
+			<button onclick="checkItout()" class="button buttonMenu"><H4>Refresh Page</H4></button>
+			<button onclick="backToOET()" class="button"><H4>Back to OET</H4></button>
+</div>
+    </div>
+
+    </header>
+  <script src="initialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	  <div id="info_nowa" class="infoHide popup_box">
+    <div>
+      <span class="closeX" onclick="closeModalWindow('nowa')">X</span>
+    </div>
+		<main class="oet-home-main-wrap">
+		<section class="oet-home-block oet-home-top">
+			<div class="oet-home-block-content">
+							</div>
+<h1> Listening Test Scores <h2>
+			<h2>
+			<p>  1.1
+				 a <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+				 b <img src="correct.jpg" alt="Correct" style="width:15px;">
+				 c <img src="incorrect.jpg" alt="Incorrect" style="width:15px;"></p>
+				<p> 1.2
+				 a <img src="correct.jpg" alt="Correct" style="width:15px;">
+				 b <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+				 c <img src="incorrect.jpg" alt="Incorrect" style="width:15px;"></p>
+				 <p> 1.3
+				 a <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+				 b <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+				 c <img src="correct.jpg" alt="Correct" style="width:15px;"></p>
+				 <h1> Reading Test Scores <h2>
+					<p>  2.1
+					 a <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+					 b <img src="correct.jpg" alt="Correct" style="width:15px;">
+					 c <img src="incorrect.jpg" alt="Incorrect" style="width:15px;"></p>
+					<p> 2.2
+					 a <img src="correct.jpg" alt="Correct" style="width:15px;">
+					 b <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+					 c <img src="incorrect.jpg" alt="Incorrect" style="width:15px;"></p>
+					 <p> 2.3
+					 a <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+					 b <img src="incorrect.jpg" alt="Incorrect" style="width:15px;">
+					 c <img src="correct.jpg" alt="Correct" style="width:15px;"></p>
+				</h2>
+
+ 
+    <left>
+
+  <script>
+
+      function showCustomMenu(akcja){
+
+        document.getElementById("info_"+akcja).classList.remove("infoHide");
+        document.getElementById("info_"+akcja).classList.add('infoShow');
+
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "0.5";
+
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].setAttribute('disabled', 'disabled');
+            buttonClass[i].style.cursor = 'default';
+        };
+      }
+
+      function closeModalWindow(akcja)
+      {
+        document.getElementById("info_"+akcja).classList.remove("infoShow");
+        document.getElementById("info_"+akcja).classList.add('infoHide');
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "1";
+
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].removeAttribute('disabled');
+            buttonClass[i].style.cursor = 'default';
+        };
+      }
+
+      function closeModalWindowNowa()
+      {
+        document.getElementById("info").classList.remove("infoShow");
+        document.getElementById("info").classList.add('infoHide');
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "1";
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].removeAttribute('disabled');
+        };
+      }
+
+      function backToOET()
+      {
+          window.location.href = "gimbaza.html";
+      }
+
+      document.getElementById('newForm').onsubmit = function(){
+          var categoryName = document.getElementById('categoryName').value;
+          var categoryTime = document.getElementById('categoryTime').value;
+
+      }
+      function checkItout()
+      {
+          window.location.href = "answers.html";
+      }
+
+      document.getElementById('newForm').onsubmit = function(){
+          var categoryName = document.getElementById('categoryName').value;
+          var categoryTime = document.getElementById('categoryTime').value;
+
+      }
+
+  </script>
+
+</body>
+
+</html>
+
+
+		
