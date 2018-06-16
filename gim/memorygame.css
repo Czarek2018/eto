@@ -1,0 +1,93 @@
+body
+{
+	margin: 0;
+	background-color: #26282E;
+	color: #209781;
+	font-family: 'Lobster' , sans-serif;
+	font-size: 28px;
+}
+
+
+h1{
+	font-size: 64px;
+	font-weight: 400;
+	text-align: center;
+	letter-spacing: 5px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+.oet-opt {
+     float: right;
+     margin-top: auto;
+     margin-right: auto;
+   }
+   .buttons{
+  padding: 10px 20px;   
+  background-color: transparent;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #209781;
+  float: left;
+  position: relative;
+	 
+   }
+   .buttons:hover{background-color: #209781;} 
+    
+	.buttons:active {
+  background-color: black;
+  box-shadow: 0 5px #209781;
+  transform: translateY(4px);
+}
+p
+{
+    text-align: center;
+	letter-spacing: 2px;
+	margin-top: 5px;
+	margin-bottom: 25px;	
+}
+.plansza
+{
+width: 900px;
+margin-left: auto;
+margin-right: auto;
+text-align: center;	
+}
+.cardA
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url("cards/UJ.jpg");
+	border: 5px solid #e9b64a;
+	border-radius: 4px;
+	cursor: default;
+    filter: brightness(100%);	
+	transition: all .3s; ease-in-out;
+}
+.card
+{
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin: 3px;
+	background-image: url("cards/UJ.jpg");
+	border: 5px solid #51c8b2;
+	border-radius: 4px;
+	cursor: pointer;
+    filter: brightness(70%);	
+	transition: all .3s; ease-in-out;
+}
+.card:hover
+{
+	border: 5px solid #e9b64a;
+	filter: brightness(100%);
+}
+
+	
+

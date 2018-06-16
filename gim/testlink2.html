@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<html lang="pl">
+</head>
+		<meta name="description" content="Tests for English language learners with automatic marking." />
+<meta name="keywords" content="Learn English" />
+<title>Answers</title>
+<link rel="shortcut icon" href="img/test.png" />
+<link rel="icon" sizes="16x16 32x32 64x64" href="img/test.png" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<header class="oet-head-wrap">
+	<a href="gimbaza.html" class="oet-logo" title="Online English Tests">
+			<img src="img/oet.svg" title="Online English Tests" alt="Online English Tests"/>
+			<main class="oet-home-main-wrap">
+			<div><h1><strong>Get to know English with OET</strong></h1></div></a>
+				<div class="oet-opt">
+				<button onclick="window.open('szubienica1.html')" class="buttons">HANGMAN</button>
+	     <button onclick="showCustomMenu('nowa')"<button class="buttons"><span>LISTENING</span></button>
+			<button onclick="window.open('memorygame.html')"class="buttons" ><span>MEMORY</span></button>
+			<button onclick="backToOET()" class="buttons"><span>HOME</span></button>
+</div>
+    </div>
+
+    </header>
+  <script src="initialize.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	  <div id="info_nowa" class="infoHide popup_box">
+    <div>
+      <span class="closeX" onclick="closeModalWindow('nowa')">X</span>
+    </div>
+    <h2>
+      Odsłuchaj nagrania dwa razy i wpisz odpowiedź a, b lub c.
+    </h2>
+    <br/>
+    <h3>
+      <audio controls>
+	<source src="listening1.wav" type='audio/wav' loop='false'>
+</audio>
+<p> You are going to hear three conversations. Answer a, b or c:</p>
+<div id="rightSide">
+	<br>
+<form name="myForm" id="myForm">
+	<input type="text" name="Listening1">
+	<input type="submit" value="check answer" />
+	<span><p>1.1 Where are the people ? </p>
+<p>  <input type="text" name="Listening1" value="a" style="width:2em">
+ a) in the jewelery shop </p>
+<p>  <input type="text" name="Listening1" value="b" style="width:2em">
+ b) at the florist's </p>
+<p>  <input type="text" name="Listening1" value="c" style="width:2em">
+ c) in the street </p></span><br><br>
+ </form>
+</div>
+
+<script type="text/javascript">
+ 											
+	var form = document.getElementById("myForm");
+	form.onsubmit = function() {
+		var cor = 0;
+		var incor = 0;
+		Listening1 = document.myForm.elements[0].value.toLowerCase();
+		if (Listening1 == "b"){
+			++cor;
+		}else{
+			++incor;
+		}
+		alert("You are " + cor * 100 + "% correct!");
+		return false;
+	}
+</script>
+
+<div id="middle">
+	<br>
+<form name="myForm1" id="myForm1">
+	<input type="text" name="Listening2">
+	<input type="submit" value="check answer" />
+		<span><p>1.2 Where are the people ? </p>
+	<p>  <input type="text" name="Listening2" value="a" style="width:2em">
+		a) in the music shop </p>
+	<p>  <input type="text" name="Listening2" value="b" style="width:2em">
+		b) in the gym </p>
+	<p>  <input type="text" name="Listening2" value="c" style="width:2em">
+		c) in a restaurant </p></span><br><br>
+									 </form>
+						 </input>
+					 </div>
+						 <script type="text/javascript">
+							 var form = document.getElementById("myForm1");
+							 form.onsubmit = function() {
+								 var cor = 0;
+								 var incor = 0;
+								 Listening2 = document.myForm1.elements[0].value.toLowerCase();
+								 if (Listening2 == "a"){
+									 ++cor;
+								 }else{
+									 ++incor;
+								 }
+								 alert("You are " + cor * 100 + "% correct!");
+								 return false;
+							 }
+						 </script>
+
+<div id="leftSide">
+	<br>
+	<form name="myForm2" id="myForm2">
+		<input type="text" name="Listening3">
+		<input type="submit" value="check answer" />
+								<span><p>1.3 Where are the people ? </p>
+				<p>  <input type="text" name="Listening3" value="a" style="width:2em">
+					a) in the clothes shop </p>
+				<p>  <input type="text" name="Listening3" value="b" style="width:2em">
+					b) in the gym </p>
+				<p>  <input type="text" name="Listening3" value="c" style="width:2em">
+					c) in an electrical store </p></span><br><br>
+
+												 </form>
+											 </input>
+										 </div>
+										 <script type="text/javascript">
+											 var form = document.getElementById("myForm2");
+											 form.onsubmit = function() {
+												 var cor = 0;
+												 var incor = 0;
+												 Listening3 = document.myForm2.elements[0].value.toLowerCase();
+												 if (Listening3 == "c"){
+													 ++cor;
+												 }else{
+													 ++incor;
+												 }
+												 alert("You are " + cor * 100 + "% correct!");
+												 return false;
+											 }
+											 
+						</script>
+									 </div>
+    </h3>
+   
+  <script>
+
+      function showCustomMenu(akcja){
+
+        document.getElementById("info_"+akcja).classList.remove("infoHide");
+        document.getElementById("info_"+akcja).classList.add('infoShow');
+
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "0.5";
+
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].setAttribute('disabled', 'disabled');
+            buttonClass[i].style.cursor = 'default';
+        };
+      }
+
+      function closeModalWindow(akcja)
+      {
+        document.getElementById("info_"+akcja).classList.remove("infoShow");
+        document.getElementById("info_"+akcja).classList.add('infoHide');
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "1";
+
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].removeAttribute('disabled');
+            buttonClass[i].style.cursor = 'default';
+        };
+      }
+
+      function closeModalWindowNowa()
+      {
+        document.getElementById("info").classList.remove("infoShow");
+        document.getElementById("info").classList.add('infoHide');
+        var contentClass = document.getElementsByClassName("content");
+        contentClass[0].style.opacity = "1";
+        var buttonClass = document.getElementsByClassName("buttonMenu");
+        var len = buttonClass.length;
+        for(var i=0; i < len; i++) {
+            buttonClass[i].removeAttribute('disabled');
+        };
+      }
+
+      function backToOET()
+      {
+          window.location.href = "gimbaza.html";
+      }
+
+      document.getElementById('newForm').onsubmit = function(){
+          var categoryName = document.getElementById('categoryName').value;
+          var categoryTime = document.getElementById('categoryTime').value;
+      //    quiz.kategorie.push("nazwa":categoryName, "pytania": [], "czasOdpowiedzi":categoryTime);
+      }
+      function checkItout()
+      {
+          window.location.href = "answers.html";
+      }
+
+      document.getElementById('newForm').onsubmit = function(){
+          var categoryName = document.getElementById('categoryName').value;
+          var categoryTime = document.getElementById('categoryTime').value;
+      //    quiz.kategorie.push("nazwa":categoryName, "pytania": [], "czasOdpowiedzi":categoryTime);
+      }
+	 
+	  	
+  </script>
+<body background="img/bigben.jpg">
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+body
+{
+	background-color: #000000;
+	color: lightgray;
+	font-size: 28px;
+	font-family: 'Inconsolata';
+	font-weight: 700;
+}
+
+#pojemnik
+{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#plansza
+{
+	width: 900px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 48px;
+	min-height: 60px;
+}
+#zdjecie
+{
+	float: left; 
+	width: 390px;
+	text-align: center;
+	min-height: 200p
+}
+
+#szubienica
+{
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+#alfabet
+{
+	float: left; 
+	width: 450px;
+	text-align: center;
+	min-height: 280px;
+}
+
+.litera
+{
+	width: 30px;
+	height: 30px;
+	text-align:center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid gray;
+	float: left;
+	cursor: pointer;
+	border-radius: 15px;
+}
+
+.litera:hover
+{
+	background-color: #222222;
+	color: white;
+	border: 3px solid white;
+}
+
+.reset
+{
+	color:green;
+	cursor: pointer;
+	font-size: 48px;
+}
+
+.reset:hover
+{
+	color:white;
+}
+
+/* Variabes */  
+$orange: ffa600;
+$green: #c1d72e;
+$blue: #82d2e5;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$green ;
+
+/* Mixin's */ 
+
+@mixin transition {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin clear {
+  &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+}
+
+ @mixin box-size {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ @mixin transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin fade {
+  -moz-transition: all 1s ease-in;
+  -moz-transition:all 0.3s ease-in-out;
+  -webkit-transition:all 0.3s ease-in-out;
+}
+
+@mixin opacity {
+  opacity:0.4;
+  filter:alpha(opacity=40); 
+  @include fade;
+}
+
+@mixin corners ($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius; 
+  -khtml-border-radius: $radius; 
+}
+
+body {
+  background:$base-color;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  color:$white;
+  height:100%;
+  text-align:center;
+  font-size:18px;
+}
+
+.wrappper{
+  @include clear;
+  width:100%;
+  margin:0 auto;
+}
+
+
+canvas{
+  color:$white;
+  border: $white dashed 2px;
+  padding:15px;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+   margin:5px 0;
+}
+
+h1 {
+    font-size: 2.6em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+p{
+  font-size: 1.6em;
+}
+.oet-opt {
+     float: right;
+     margin-top: auto;
+     margin-right: auto;
+   }
+   .buttons{
+  padding: 10px 20px;   
+  background-color: transparent;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px grey;
+  float: left;
+  position: relative;
+	 
+   }
+   .buttons:hover{background-color: grey;} 
+    
+	.buttons:active {
+  background-color: black;
+  box-shadow: 0 5px grey;
+  transform: translateY(4px);
+}
